@@ -241,3 +241,31 @@ table {
   font-size: 1.6rem;
   font-weight: bold;
 }
+.container .footer {
+  background-color: #828282;
+  color: white;
+  padding: 50px 85px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 26px;
+  font-size: 14px;
+}
+.container .footer .state {
+  width: 17%;
+}
+.container .footer .state h2 {
+  font-size: 1.3rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+.container .footer .contact {
+  width: 35%;
+}
+.container .footer .contact h2 {
+  font-size: 1.3rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+.container .footer .contact input {
+  width: 100%;
+}
