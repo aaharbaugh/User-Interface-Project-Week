@@ -7,7 +7,7 @@
         background-color: lightgray;
 
         h2{
-            font-size: 24px;
+            font-size: 2rem;
             font-weight: bold;
         }
     }
@@ -18,7 +18,103 @@
         height: 598px;
 
         .top-headlines{
-            font-size: 64px;
+            font-size: 4rem;
+            color: white;
+            width: 33%;
+            font-weight: bold;
+
         }
+    }
+
+    .content-row{
+        padding: 50px 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .row-half-image{
+        }
+
+        .row-half-paragraph{
+            width: 47%;
+            font-size: 1rem;
+            line-height: 1.6rem;
+
+            h2{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: #222222;
+                margin: 1rem 0;
+            }
+
+            button{
+                margin: 30px 0;
+            }
+        }
+
+    }
+
+    .content-column{
+        padding: 0px 85px;
+        display: flex;
+        flex-direction: column; 
+
+        .row-full-image{
+            width: 855px;
+            height: 230px;
+            position: relative;
+
+            &.villas{
+                background-image: url('../img/home/home-villas-img.png');
+            }
+
+            &.outskirt{
+                background-image: url('../img/home/home-outskirts-img.png');
+            }
+
+            &.blocks{
+                background-image: url('../img/home/home-the-blocks-img.png');
+            }
+
+            .right-img-caption{
+                padding: 25px;
+                background-color: #D8D8D8;
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                border: 1px solid white;
+
+                letter-spacing: 5px;
+                font-size: 1.4rem;
+
+                //alignment
+                position: absolute;
+                left: 0;
+                bottom: -35px;
+            }
+
+            .left-img-caption{
+                .right-img-caption;
+                left: inherit;
+                right: 0;
+            }
+        }
+
+        .row-full-paragraph{
+            padding: 75px 220px;
+            font-size: 1.1rem;
+            line-height: 1.2rem;
+
+            p{
+                padding-top: 16px;
+            }
+        }
+
+    }
+
+    .content-headline{
+        padding: 50px 85px;
+        font-size: 1.6rem;
+        font-weight: bold;
     }
 }

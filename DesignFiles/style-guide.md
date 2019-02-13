@@ -46,7 +46,7 @@ Background: #828282
 
 ### Footer Text
 - Font Weight: Regular
-- Font Size: 14px
+- Font Size: 14px   
 - Line Height: 26px
 - Color: #FFFFFF
 

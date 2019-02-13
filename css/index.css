@@ -134,6 +134,10 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -143,7 +147,7 @@ table {
   background-color: lightgray;
 }
 .container .top-menu h2 {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
 }
 .container .homepage {
@@ -152,5 +156,88 @@ table {
   height: 598px;
 }
 .container .homepage .top-headlines {
-  font-size: 64px;
+  font-size: 4rem;
+  color: white;
+  width: 33%;
+  font-weight: bold;
+}
+.container .content-row {
+  padding: 50px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .content-row .row-half-paragraph {
+  width: 47%;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.container .content-row .row-half-paragraph h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222222;
+  margin: 1rem 0;
+}
+.container .content-row .row-half-paragraph button {
+  margin: 30px 0;
+}
+.container .content-column {
+  padding: 0px 85px;
+  display: flex;
+  flex-direction: column;
+}
+.container .content-column .row-full-image {
+  width: 855px;
+  height: 230px;
+  position: relative;
+}
+.container .content-column .row-full-image.villas {
+  background-image: url('../img/home/home-villas-img.png');
+}
+.container .content-column .row-full-image.outskirt {
+  background-image: url('../img/home/home-outskirts-img.png');
+}
+.container .content-column .row-full-image.blocks {
+  background-image: url('../img/home/home-the-blocks-img.png');
+}
+.container .content-column .row-full-image .right-img-caption {
+  padding: 25px;
+  background-color: #D8D8D8;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+}
+.container .content-column .row-full-image .left-img-caption {
+  padding: 25px;
+  background-color: #D8D8D8;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  left: inherit;
+  right: 0;
+}
+.container .content-column .row-full-paragraph {
+  padding: 75px 220px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+.container .content-column .row-full-paragraph p {
+  padding-top: 16px;
+}
+.container .content-headline {
+  padding: 50px 85px;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
