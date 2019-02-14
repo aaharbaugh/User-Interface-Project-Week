@@ -4,11 +4,25 @@
     font-family: Roboto, Arial, sans-serif;
 
     .top-menu{
-        background-color: lightgray;
+        padding: 10px 85px;
+        background-color: #9AA5B0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         h2{
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: bold;
+            color: white;
+        }
+
+        navbar{
+            .navbar-link{
+                display: none;
+            }
+            .navbar-img{
+                
+            }
         }
     }
 
@@ -16,13 +30,17 @@
         background-image: url('../img/home/home-jumbotron.png');
         width: 1024px;
         height: 598px;
+        position: relative;
 
         .top-headlines{
             font-size: 4rem;
+            line-height: 75px;
             color: white;
             width: 33%;
             font-weight: bold;
-
+            position: absolute;
+            left: 85px;
+            bottom: 50px;
         }
     }
 
@@ -49,6 +67,9 @@
 
             button{
                 margin: 30px 0;
+
+                //future mixin
+                .button-mixin(white, black, .9rem, 15px, 25px);
             }
         }
 
@@ -118,37 +139,5 @@
         font-weight: bold;
     }
 
-    .footer{
-        background-color: #828282;
-        color: white; 
-        padding: 50px 85px;
-        display: flex;
-        justify-content: space-between;
-        line-height: 26px;
-        font-size: 14px;
-
-        .state{
-            width: 17%;
-
-            h2{
-                font-size: 1.3rem;
-                line-height: 24px;
-                font-weight: bold;
-            }
-        }
-
-        .contact{
-            width: 35%;
-
-            h2{
-                font-size: 1.3rem;
-                line-height: 24px;
-                font-weight: bold;
-            }
-
-            input{
-                width: 100%;
-            }
-        }
-    }
 }
+

@@ -144,22 +144,35 @@ table {
   font-family: Roboto, Arial, sans-serif;
 }
 .container .top-menu {
-  background-color: lightgray;
+  padding: 10px 85px;
+  background-color: #9AA5B0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .container .top-menu h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  color: white;
+}
+.container .top-menu navbar .navbar-link {
+  display: none;
 }
 .container .homepage {
   background-image: url('../img/home/home-jumbotron.png');
   width: 1024px;
   height: 598px;
+  position: relative;
 }
 .container .homepage .top-headlines {
   font-size: 4rem;
+  line-height: 75px;
   color: white;
   width: 33%;
   font-weight: bold;
+  position: absolute;
+  left: 85px;
+  bottom: 50px;
 }
 .container .content-row {
   padding: 50px 85px;
@@ -180,6 +193,10 @@ table {
 }
 .container .content-row .row-half-paragraph button {
   margin: 30px 0;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 0.9rem;
+  padding: 15px 25px;
 }
 .container .content-column {
   padding: 0px 85px;
@@ -241,7 +258,7 @@ table {
   font-size: 1.6rem;
   font-weight: bold;
 }
-.container .footer {
+.footer {
   background-color: #828282;
   color: white;
   padding: 50px 85px;
@@ -250,22 +267,22 @@ table {
   line-height: 26px;
   font-size: 14px;
 }
-.container .footer .state {
+.footer .state {
   width: 17%;
 }
-.container .footer .state h2 {
+.footer .state h2 {
   font-size: 1.3rem;
   line-height: 24px;
   font-weight: bold;
 }
-.container .footer .contact {
+.footer .contact {
   width: 35%;
 }
-.container .footer .contact h2 {
+.footer .contact h2 {
   font-size: 1.3rem;
   line-height: 24px;
   font-weight: bold;
 }
-.container .footer .contact input {
+.footer .contact input {
   width: 100%;
 }
