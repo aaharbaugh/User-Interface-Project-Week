@@ -149,6 +149,9 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.9;
+  width: 1024px;
+  position: absolute;
 }
 .container .top-menu h2 {
   font-size: 1.6rem;
@@ -163,9 +166,10 @@ table {
   width: 1024px;
   height: 598px;
   position: relative;
+  z-index: -1;
 }
 .container .homepage .top-headlines {
-  font-size: 4rem;
+  font-size: 64px;
   line-height: 75px;
   color: white;
   width: 33%;
@@ -285,4 +289,63 @@ table {
 }
 .footer .contact input {
   width: 100%;
+}
+.services {
+  background-image: url('../img/services/services-jumbotron.png');
+  width: 1024px;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+.services .top-headlines {
+  font-size: 64px;
+  line-height: 75px;
+  color: white;
+  width: 33%;
+  font-weight: bold;
+  position: absolute;
+  left: 85px;
+  bottom: 25px;
+}
+.full-paragraph {
+  padding: 55px 85px 0 85px;
+  font-size: 1rem;
+  line-height: 24px;
+}
+.full-paragraph p {
+  padding-top: 16px;
+}
+.tab-carousel {
+  padding: 50px 85px;
+}
+.tab-carousel .tab-menu {
+  padding: 0 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-carousel .tab-menu .tab-button {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 19px;
+  padding: 15px 15px;
+  width: 180px;
+  font-weight: bold;
+}
+.tab-carousel .tab-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.tab-carousel .tab-row .row-half-paragraph {
+  width: 47%;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.tab-carousel .tab-row .row-half-paragraph h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222222;
+  margin: 1rem 0;
 }

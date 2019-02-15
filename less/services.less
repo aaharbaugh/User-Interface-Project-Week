@@ -1,0 +1,66 @@
+.services{
+    background-image: url('../img/services/services-jumbotron.png');
+    width: 1024px;
+    height: 250px;
+    position: relative;
+    z-index: -1;
+
+    .top-headlines{
+        font-size: 64px;
+        line-height: 75px;
+        color: white;
+        width: 33%;
+        font-weight: bold;
+        position: absolute;
+        left: 85px;
+        bottom: 25px;
+    }
+}
+
+.full-paragraph{
+    padding: 55px 85px 0 85px;
+    font-size: 1rem;
+    line-height: 24px;
+
+    p{
+        padding-top: 16px;
+    }
+}
+
+.tab-carousel{
+    padding: 50px 85px;
+
+    .tab-menu{
+        padding: 0 0 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .tab-button{
+            display: flex;
+            justify-content: center;
+            .button-mixin(white, black, 19px, 15px, 15px);
+            width: 180px;
+            font-weight: bold;
+
+        }
+    }
+
+    .tab-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .row-half-paragraph{
+            width: 47%;
+            font-size: 1rem;
+            line-height: 1.6rem;
+
+            h2{
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: #222222;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
