@@ -333,6 +333,14 @@ table {
   width: 180px;
   font-weight: bold;
 }
+.tab-carousel .tab-menu .tab-button.selected {
+  color: white;
+  background-color: #5E9FB9;
+}
+.tab-carousel .tab-menu .tab-button:hover {
+  color: white;
+  background-color: #222222;
+}
 .tab-carousel .tab-row {
   display: flex;
   justify-content: space-between;
