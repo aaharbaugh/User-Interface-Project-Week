@@ -158,7 +158,9 @@ table {
   align-items: flex-start;
   opacity: 0.9;
   width: 1024px;
-  position: absolute;
+  position: fixed;
+  height: 45px;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 600px) {
   .container .top-menu {

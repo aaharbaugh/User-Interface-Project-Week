@@ -13,9 +13,10 @@ navBarButton.forEach(img => img.addEventListener('click', (event) => {
 
     navBarButton.forEach(img => img.classList.toggle('clicked'));
     
-    if(topNavMenu.style.position === 'fixed'){
-        topNavMenu.style.position = 'absolute'
+    if(topNavMenu.style.height === '100%'){
+        topNavMenu.style.height = '45px'
     } else {
-        topNavMenu.style.position = 'fixed'
+        topNavMenu.style.height = '100%'
+    
     }
 }))
