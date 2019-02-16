@@ -143,6 +143,11 @@ table {
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif;
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 320px;
+  }
+}
 .container .top-menu {
   padding: 10px 85px;
   background-color: #9AA5B0;
@@ -152,6 +157,12 @@ table {
   opacity: 0.9;
   width: 1024px;
   position: absolute;
+}
+@media only screen and (max-width: 600px) {
+  .container .top-menu {
+    width: 320px;
+    padding: 10px 15px;
+  }
 }
 .container .top-menu h2 {
   font-size: 1.6rem;
@@ -168,6 +179,14 @@ table {
   position: relative;
   z-index: -1;
 }
+@media only screen and (max-width: 600px) {
+  .container .homepage {
+    background-image: url('../img/home/home-mobile-jumbotron.png');
+    width: 320px;
+    height: 260px;
+    padding: 0px 15px;
+  }
+}
 .container .homepage .top-headlines {
   font-size: 64px;
   line-height: 75px;
@@ -178,22 +197,58 @@ table {
   left: 85px;
   bottom: 50px;
 }
+@media only screen and (max-width: 600px) {
+  .container .homepage .top-headlines {
+    font-size: 36px;
+    line-height: 42px;
+    left: 15px;
+    bottom: 15px;
+  }
+}
 .container .content-row {
   padding: 50px 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .container .content-row {
+    flex-direction: column;
+    padding: 50px 15px;
+  }
+}
+.container .content-row .row-half-image.mobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-row .row-half-image.desktop {
+    display: none;
+  }
+  .container .content-row .row-half-image.mobile {
+    order: -1;
+    display: flex;
+  }
+}
 .container .content-row .row-half-paragraph {
   width: 47%;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-row .row-half-paragraph {
+    width: 100%;
+  }
 }
 .container .content-row .row-half-paragraph h2 {
   font-size: 1.6rem;
   font-weight: bold;
   color: #222222;
   margin: 1rem 0;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-row .row-half-paragraph h2 {
+    font-size: 1.5rem;
+  }
 }
 .container .content-row .row-half-paragraph button {
   margin: 30px 0;
@@ -202,10 +257,20 @@ table {
   font-size: 0.9rem;
   padding: 15px 25px;
 }
+@media only screen and (max-width: 600px) {
+  .container .content-row .row-half-paragraph button {
+    width: 100%;
+  }
+}
 .container .content-column {
   padding: 0px 85px;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-column {
+    padding: 0px 0px;
+  }
 }
 .container .content-column .row-full-image {
   width: 855px;
@@ -221,6 +286,21 @@ table {
 .container .content-column .row-full-image.blocks {
   background-image: url('../img/home/home-the-blocks-img.png');
 }
+@media only screen and (max-width: 600px) {
+  .container .content-column .row-full-image {
+    width: 320px;
+    height: 200px;
+  }
+  .container .content-column .row-full-image.villas {
+    background-image: url('../img/home/home-mobile-villas-img.png');
+  }
+  .container .content-column .row-full-image.outskirt {
+    background-image: url('../img/home/home-mobile-outskirts-img.png');
+  }
+  .container .content-column .row-full-image.blocks {
+    background-image: url('../img/home/home-mobile-the-blocks-img.png');
+  }
+}
 .container .content-column .row-full-image .right-img-caption {
   padding: 25px;
   background-color: #D8D8D8;
@@ -233,6 +313,14 @@ table {
   position: absolute;
   left: 0;
   bottom: -35px;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-column .row-full-image .right-img-caption {
+    left: 15px;
+    width: 290px;
+    padding: 35px;
+    bottom: -75px;
+  }
 }
 .container .content-column .row-full-image .left-img-caption {
   padding: 25px;
@@ -249,10 +337,24 @@ table {
   left: inherit;
   right: 0;
 }
+@media only screen and (max-width: 600px) {
+  .container .content-column .row-full-image .left-img-caption {
+    left: 15px;
+    width: 290px;
+    padding: 35px;
+    bottom: -75px;
+  }
+}
 .container .content-column .row-full-paragraph {
   padding: 75px 220px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2rem;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-column .row-full-paragraph {
+    padding: 85px 15px 45px 15px;
+    line-height: 1.4rem;
+  }
 }
 .container .content-column .row-full-paragraph p {
   padding-top: 16px;
@@ -261,6 +363,11 @@ table {
   padding: 50px 85px;
   font-size: 1.6rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .container .content-headline {
+    padding: 25px 15px;
+  }
 }
 .footer {
   background-color: #828282;
@@ -276,19 +383,33 @@ table {
 }
 .footer .state h2 {
   font-size: 1.3rem;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: bold;
 }
 .footer .contact {
   width: 35%;
 }
 .footer .contact h2 {
-  font-size: 1.3rem;
-  line-height: 24px;
+  font-size: 1.2rem;
+  line-height: 26px;
   font-weight: bold;
 }
 .footer .contact input {
   width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 320px;
+    flex-direction: column;
+    padding: 25px 15px;
+  }
+  .footer .state {
+    width: 50%;
+    padding: 10px 0;
+  }
+  .footer .contact {
+    width: 100%;
+  }
 }
 .services {
   background-image: url('../img/services/services-jumbotron.png');

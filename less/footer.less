@@ -9,12 +9,14 @@
     line-height: 26px;
     font-size: 14px;
 
+    
+
     .state{
         width: 17%;
 
         h2{
             font-size: 1.3rem;
-            line-height: 24px;
+            line-height: 26px;
             font-weight: bold;
         }
     }
@@ -23,12 +25,27 @@
         width: 35%;
 
         h2{
-            font-size: 1.3rem;
-            line-height: 24px;
+            font-size: 1.2rem;
+            line-height: 26px;
             font-weight: bold;
         }
 
         input{
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 320px;
+        flex-direction: column;
+        padding: 25px 15px;
+
+        .state{
+            width: 50%;
+            padding: 10px 0;
+        }
+
+        .contact{
             width: 100%;
         }
     }

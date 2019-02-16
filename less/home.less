@@ -3,6 +3,10 @@
     margin: 0 auto;
     font-family: Roboto, Arial, sans-serif;
 
+    @media only screen and (max-width: 600px) {
+        width: 320px;
+    }
+
     .top-menu{
         padding: 10px 85px;
         background-color: #9AA5B0;
@@ -12,6 +16,11 @@
         opacity: 0.9;
         width: 1024px;
         position: absolute;
+
+        @media only screen and (max-width: 600px) {
+            width: 320px;
+            padding: 10px 15px;
+        }
 
         h2{
             font-size: 1.6rem;
@@ -36,6 +45,13 @@
         position: relative;
         z-index: -1;
 
+        @media only screen and (max-width: 600px) {
+            background-image: url('../img/home/home-mobile-jumbotron.png');
+            width: 320px;
+            height: 260px;
+            padding: 0px 15px;
+        }
+
         .top-headlines{
             font-size: 64px;
             line-height: 75px;
@@ -45,6 +61,13 @@
             position: absolute;
             left: 85px;
             bottom: 50px;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 36px;
+                line-height: 42px;
+                left: 15px;
+                bottom: 15px;
+            }
         }
     }
 
@@ -54,7 +77,26 @@
         justify-content: space-between;
         align-items: center;
 
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            padding: 50px 15px;
+        }
+
         .row-half-image{
+
+            &.mobile{
+                display: none;
+            }
+
+            @media only screen and (max-width: 600px) {
+                &.desktop{
+                    display: none;
+                }
+                &.mobile{
+                    order: -1;
+                    display: flex;
+                }
+            }
         }
 
         .row-half-paragraph{
@@ -62,7 +104,15 @@
             font-size: 1rem;
             line-height: 1.6rem;
 
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+
             h2{
+                @media only screen and (max-width: 600px) {
+                    font-size: 1.5rem;
+                }
+
                 font-size: 1.6rem;
                 font-weight: bold;
                 color: #222222;
@@ -74,6 +124,9 @@
 
                 //future mixin
                 .button-mixin(white, black, .9rem, 15px, 25px);
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -83,6 +136,10 @@
         padding: 0px 85px;
         display: flex;
         flex-direction: column; 
+
+        @media only screen and (max-width: 600px) {
+            padding: 0px 0px;
+        }
 
         .row-full-image{
             width: 855px;
@@ -101,6 +158,24 @@
                 background-image: url('../img/home/home-the-blocks-img.png');
             }
 
+            
+            @media only screen and (max-width: 600px) {
+                width: 320px;
+                height: 200px;
+
+                &.villas{
+                    background-image: url('../img/home/home-mobile-villas-img.png');
+                }
+    
+                &.outskirt{
+                    background-image: url('../img/home/home-mobile-outskirts-img.png');
+                }
+    
+                &.blocks{
+                    background-image: url('../img/home/home-mobile-the-blocks-img.png');
+                }
+            }
+
             .right-img-caption{
                 padding: 25px;
                 background-color: #D8D8D8;
@@ -116,6 +191,13 @@
                 position: absolute;
                 left: 0;
                 bottom: -35px;
+
+                @media only screen and (max-width: 600px) {
+                    left: 15px;
+                    width: 290px;
+                    padding: 35px;
+                    bottom: -75px;
+                }
             }
 
             .left-img-caption{
@@ -127,8 +209,13 @@
 
         .row-full-paragraph{
             padding: 75px 220px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.2rem;
+
+            @media only screen and (max-width: 600px) {
+                padding: 85px 15px 45px 15px;
+                line-height: 1.4rem;
+            }
 
             p{
                 padding-top: 16px;
@@ -141,6 +228,10 @@
         padding: 50px 85px;
         font-size: 1.6rem;
         font-weight: bold;
+
+        @media only screen and (max-width: 600px) {
+            padding: 25px 15px;
+        }
     }
 
 }
