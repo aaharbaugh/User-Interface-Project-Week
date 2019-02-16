@@ -11,8 +11,9 @@
         padding: 10px 85px;
         background-color: #9AA5B0;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         opacity: 0.9;
         width: 1024px;
         position: absolute;
@@ -28,14 +29,11 @@
             color: white;
         }
 
-        navbar{
-            .navbar-link{
-                display: none;
-            }
-            .navbar-img{
-                
-            }
+        .links{
+            display: none;
+            width: 1024px;
         }
+        
     }
 
     .homepage{
@@ -50,6 +48,7 @@
             width: 320px;
             height: 260px;
             padding: 0px 15px;
+            margin-bottom: 25px;
         }
 
         .top-headlines{
@@ -79,7 +78,8 @@
 
         @media only screen and (max-width: 600px) {
             flex-direction: column;
-            padding: 50px 15px;
+            padding: 15px 15px;
+
         }
 
         .row-half-image{
@@ -126,6 +126,7 @@
                 .button-mixin(white, black, .9rem, 15px, 25px);
                 @media only screen and (max-width: 600px) {
                     width: 100%;
+                    margin: 20px 0;
                 }
             }
         }
@@ -233,6 +234,14 @@
             padding: 25px 15px;
         }
     }
+
+}
+
+.nav-menu{
+    z-index: 5;
+    height: 100%;
+    position: fixed;
+    top: 0;
 
 }
 

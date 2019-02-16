@@ -152,8 +152,9 @@ table {
   padding: 10px 85px;
   background-color: #9AA5B0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   opacity: 0.9;
   width: 1024px;
   position: absolute;
@@ -169,8 +170,9 @@ table {
   font-weight: bold;
   color: white;
 }
-.container .top-menu navbar .navbar-link {
+.container .top-menu .links {
   display: none;
+  width: 1024px;
 }
 .container .homepage {
   background-image: url('../img/home/home-jumbotron.png');
@@ -185,6 +187,7 @@ table {
     width: 320px;
     height: 260px;
     padding: 0px 15px;
+    margin-bottom: 25px;
   }
 }
 .container .homepage .top-headlines {
@@ -214,7 +217,7 @@ table {
 @media only screen and (max-width: 600px) {
   .container .content-row {
     flex-direction: column;
-    padding: 50px 15px;
+    padding: 15px 15px;
   }
 }
 .container .content-row .row-half-image.mobile {
@@ -260,6 +263,7 @@ table {
 @media only screen and (max-width: 600px) {
   .container .content-row .row-half-paragraph button {
     width: 100%;
+    margin: 20px 0;
   }
 }
 .container .content-column {
@@ -368,6 +372,12 @@ table {
   .container .content-headline {
     padding: 25px 15px;
   }
+}
+.nav-menu {
+  z-index: 5;
+  height: 100%;
+  position: fixed;
+  top: 0;
 }
 .footer {
   background-color: #828282;
