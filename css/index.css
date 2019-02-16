@@ -149,6 +149,7 @@ table {
   }
 }
 .container .top-menu {
+  z-index: 5;
   padding: 10px 85px;
   background-color: #9AA5B0;
   display: flex;
@@ -170,9 +171,29 @@ table {
   font-weight: bold;
   color: white;
 }
+.container .top-menu .navbar-img.clicked {
+  display: none;
+}
 .container .top-menu .links {
   display: none;
   width: 1024px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .top-menu .links.clicked {
+  display: flex;
+  height: 600px;
+}
+.container .top-menu .links .navbar-link {
+  font-size: 48px;
+  line-height: 85px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container .top-menu .links .navbar-link:hover {
+  color: #222222;
 }
 .container .homepage {
   background-image: url('../img/home/home-jumbotron.png');

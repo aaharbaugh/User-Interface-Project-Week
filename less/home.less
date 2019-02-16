@@ -8,6 +8,7 @@
     }
 
     .top-menu{
+        z-index: 5;
         padding: 10px 85px;
         background-color: #9AA5B0;
         display: flex;
@@ -29,9 +30,43 @@
             color: white;
         }
 
+        .navbar-img{
+
+            &.clicked{
+                display: none;
+            }
+        }
+
         .links{
             display: none;
             width: 1024px;
+            justify-content: center; 
+            align-items: center;
+            flex-direction: column;
+
+            &.clicked{
+                display: flex;
+                height: 600px;
+            }
+
+            .navbar-link{
+                font-size: 48px;
+                line-height: 85px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover{
+                    color: #222222;
+                }
+
+            }
+
+//             - Font Weight: Bold
+// - Font Size: 48px
+// - Line Height: 85px
+// - Color: #FFFFFF
+// - Hover Color: #222222
         }
         
     }
