@@ -55,7 +55,7 @@
     }
 
     .tab-row{
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: flex-end;
 
@@ -74,6 +74,10 @@
             p{
                 padding-bottom: 15px;
             }
+        }
+
+        &.shown{
+            display: flex;
         }
     }
 }

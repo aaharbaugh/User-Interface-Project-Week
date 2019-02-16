@@ -168,7 +168,10 @@ table {
     padding: 10px 15px;
   }
 }
-.container .top-menu h2 {
+.container .top-menu a {
+  text-decoration: none;
+}
+.container .top-menu a h2 {
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
@@ -496,7 +499,7 @@ table {
   background-color: #222222;
 }
 .tab-carousel .tab-row {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -513,4 +516,7 @@ table {
 }
 .tab-carousel .tab-row .row-half-paragraph p {
   padding-bottom: 15px;
+}
+.tab-carousel .tab-row.shown {
+  display: flex;
 }
