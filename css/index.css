@@ -349,3 +349,6 @@ table {
   color: #222222;
   margin: 1rem 0;
 }
+.tab-carousel .tab-row .row-half-paragraph p {
+  padding-bottom: 15px;
+}
