@@ -30,11 +30,14 @@ class TabLink {
         this.tabData = this.tabElement.dataset.tab;
 
     this.card = document.querySelectorAll(`div[data-tab="${this.tabData}"]`);
-
-    this.card = Array.from(this.card).map(card => new TabCard(card));
+    this.cards = Array.from(this.card).map(card => new TabCard(card));
 
     this.tabElement.addEventListener('click', (event) => {
         this.selectTab();
+        TweenMax.from(this.card[1], 0.5, {
+            x: 200,
+            opacity: 0
+          })
     });
 
     }
@@ -51,8 +54,7 @@ class TabLink {
 
             tabRow.forEach(row => row.style.display = 'none');
 
-        this.card.forEach(card => {
-            console.log(card)
+        this.cards.forEach(card => {
             card.selectCard()
         });
 
@@ -62,12 +64,25 @@ class TabLink {
 class TabCard{
     constructor(tabElement){
         this.tabElement = tabElement;
-        console.log('yo')
     }
     selectCard(){
-        console.log('yo')
+
         this.tabElement.style.display = "flex";
+
     }
 }
 
 let tabs = document.querySelectorAll('.tab-button').forEach(tab => new TabLink(tab));
+
+
+//animation attempts. 
+
+const headline = document.querySelector('.top-headlines')
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('loaded')
+    TweenMax.from(headline, 1, {
+        x: 500,
+        opacity: 0
+      })
+})
