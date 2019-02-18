@@ -34,16 +34,19 @@ class TabLink {
 
     this.tabElement.addEventListener('click', (event) => {
         this.selectTab();
-        TweenMax.from(this.card[1], 0.5, {
-            x: 200,
-            opacity: 0
+
+        TweenMax.from(this.card[1], 1, {
+            y: 200,
+            opacity: 0,
+            ease: 'Power2.easeOut'
           })
+
+          this.card[1].classList.add('shown')
     });
 
     }
 
     selectTab(){
-
         const tabs = document.querySelectorAll('.tab-button');
 
         tabs.forEach(tab => tab.classList.remove('selected'))
@@ -52,7 +55,10 @@ class TabLink {
 
         const tabRow = document.querySelectorAll('.tab-row');
 
-            tabRow.forEach(row => row.style.display = 'none');
+        tabRow.forEach(row => {
+                row.classList.remove('shown')
+                row.style.display = 'none'
+            });
 
         this.cards.forEach(card => {
             card.selectCard()
@@ -77,12 +83,18 @@ let tabs = document.querySelectorAll('.tab-button').forEach(tab => new TabLink(t
 
 //animation attempts. 
 
-const headline = document.querySelector('.top-headlines')
+const headline = document.querySelectorAll('.top-headlines div')
+let delayTime = 0.2;
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('loaded')
-    TweenMax.from(headline, 1, {
-        x: 500,
-        opacity: 0
+headline.forEach(line => {
+    document.addEventListener('DOMContentLoaded', (event) => {
+    TweenMax.from(line, 0.5, {
+        x: 200,
+        delay: delayTime,
+        opacity: 0,
+        ease: 'Power2.easeOut'
       })
+      delayTime += 0.5;
 })
+})
+
