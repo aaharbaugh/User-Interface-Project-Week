@@ -585,3 +585,71 @@ table {
 .tab-carousel .tab-row.shown {
   display: flex;
 }
+.contact {
+  background-image: url('../img/contact/contact-jumbotron.png');
+  width: 1024px;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  .contact {
+    background-image: url('../img/contact/contact-mobile-jumbotron.png');
+    width: 320px;
+    height: 260px;
+    padding: 0px 15px;
+    margin-bottom: 25px;
+  }
+}
+.contact .top-headlines {
+  font-size: 64px;
+  line-height: 75px;
+  color: white;
+  width: 60%;
+  font-weight: bold;
+  position: absolute;
+  left: 85px;
+  bottom: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .contact .top-headlines {
+    font-size: 36px;
+    line-height: 36px;
+    left: 15px;
+    bottom: 25px;
+  }
+}
+.two-column {
+  display: flex;
+  flex-direction: row;
+}
+.two-column .contact-form {
+  padding: 15px 85px;
+  width: 50%;
+  margin-right: 50px;
+}
+.two-column .contact-form .inputfield {
+  padding: 15px 0;
+}
+.two-column .contact-form .inputfield h2 {
+  font-size: 18x;
+  line-height: 24px;
+  margin: 5px 0;
+}
+.two-column .contact-form .inputfield p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.two-column .contact-form .inputfield input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.two-column .address-bar {
+  width: 40%;
+}
+.two-column .address-bar .state {
+  width: 50%;
+  padding: 10px 0;
+}
