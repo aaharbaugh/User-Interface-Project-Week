@@ -217,8 +217,8 @@ table {
   }
 }
 .container .homepage .top-headlines {
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 84px;
+  line-height: 92px;
   color: white;
   width: 33%;
   font-weight: bold;
@@ -454,6 +454,15 @@ table {
   position: relative;
   z-index: -1;
 }
+@media only screen and (max-width: 600px) {
+  .services {
+    background-image: url('../img/services/services-mobile-jumbotron.png');
+    width: 320px;
+    height: 260px;
+    padding: 0px 15px;
+    margin-bottom: 25px;
+  }
+}
 .services .top-headlines {
   font-size: 64px;
   line-height: 75px;
@@ -464,6 +473,14 @@ table {
   left: 85px;
   bottom: 25px;
 }
+@media only screen and (max-width: 600px) {
+  .services .top-headlines {
+    font-size: 36px;
+    line-height: 42px;
+    left: 15px;
+    bottom: 25px;
+  }
+}
 .full-paragraph {
   padding: 55px 85px 0 85px;
   font-size: 1rem;
@@ -472,13 +489,29 @@ table {
 .full-paragraph p {
   padding-top: 16px;
 }
+@media only screen and (max-width: 600px) {
+  .full-paragraph {
+    flex-direction: column;
+    padding: 15px 15px;
+  }
+}
 .tab-carousel {
   padding: 50px 85px;
+}
+@media only screen and (max-width: 600px) {
+  .tab-carousel {
+    padding: 0px 15px;
+  }
 }
 .tab-carousel .tab-menu {
   padding: 0 0 50px 0;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .tab-carousel .tab-menu {
+    flex-direction: column;
+  }
 }
 .tab-carousel .tab-menu .tab-button {
   display: flex;
@@ -489,6 +522,16 @@ table {
   padding: 15px 15px;
   width: 180px;
   font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .tab-carousel .tab-menu .tab-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 19px;
+    padding: 15px 15px;
+  }
 }
 .tab-carousel .tab-menu .tab-button.selected {
   color: white;
@@ -503,10 +546,32 @@ table {
   justify-content: space-between;
   align-items: flex-end;
 }
+.tab-carousel .tab-row .row-half-image {
+  padding-bottom: 65px;
+}
+.tab-carousel .tab-row .row-half-image.mobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .tab-carousel .tab-row {
+    flex-direction: column;
+  }
+  .tab-carousel .tab-row .row-half-image.mobile {
+    display: flex;
+  }
+  .tab-carousel .tab-row .row-half-image.full {
+    display: none;
+  }
+}
 .tab-carousel .tab-row .row-half-paragraph {
   width: 47%;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+@media only screen and (max-width: 600px) {
+  .tab-carousel .tab-row .row-half-paragraph {
+    width: 100%;
+  }
 }
 .tab-carousel .tab-row .row-half-paragraph h2 {
   font-size: 1.4rem;

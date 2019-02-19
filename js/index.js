@@ -94,7 +94,7 @@ headline.forEach(line => {
         opacity: 0,
         ease: 'Power2.easeOut'
       })
-      delayTime += 0.5;
+      delayTime += 0.4;
 })
 })
 
