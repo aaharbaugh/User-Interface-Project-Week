@@ -237,6 +237,7 @@ table {
 .container .content-row {
   padding: 50px 85px;
   display: flex;
+  visibility: hidden;
   justify-content: space-between;
   align-items: center;
 }
@@ -585,7 +586,7 @@ table {
 .tab-carousel .tab-row.shown {
   display: flex;
 }
-.contact {
+.contact-page {
   background-image: url('../img/contact/contact-jumbotron.png');
   width: 1024px;
   height: 250px;
@@ -593,7 +594,7 @@ table {
   z-index: -1;
 }
 @media only screen and (max-width: 600px) {
-  .contact {
+  .contact-page {
     background-image: url('../img/contact/contact-mobile-jumbotron.png');
     width: 320px;
     height: 260px;
@@ -601,7 +602,7 @@ table {
     margin-bottom: 25px;
   }
 }
-.contact .top-headlines {
+.contact-page .top-headlines {
   font-size: 64px;
   line-height: 75px;
   color: white;
@@ -612,7 +613,7 @@ table {
   bottom: 25px;
 }
 @media only screen and (max-width: 600px) {
-  .contact .top-headlines {
+  .contact-page .top-headlines {
     font-size: 36px;
     line-height: 36px;
     left: 15px;

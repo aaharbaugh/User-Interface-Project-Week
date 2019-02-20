@@ -98,3 +98,49 @@ headline.forEach(line => {
 })
 })
 
+//fadeins
+
+//function that checks if element is out of viewport. 
+var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+var count = 0;
+var count2 = 0;
+var headers = document.querySelectorAll('.content-row')
+
+window.addEventListener('scroll', function (event) {
+	if (isInViewport(headers[1])) {
+		if(count === 0){
+            count += 1;
+            headers[1].style.visibility = 'visible'
+            TweenMax.from(headers[1], 1, {
+                x: 400,
+                opacity: 0,
+                ease: 'Power2.easeOut'
+              })
+            
+        }
+	} else {
+    console.log('Nope...');
+  }
+  if (isInViewport(headers[0])) {
+    if(count2 === 0){
+        count2 += 1;
+        headers[0].style.visibility = 'visible'
+        TweenMax.from(headers[0], 1, {
+            x: -400,
+            opacity: 0,
+            ease: 'Power2.easeOut'
+          })
+        
+    }
+} else {
+console.log('Nope...');
+}
+}, false);
