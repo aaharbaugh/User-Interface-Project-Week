@@ -286,6 +286,14 @@ table {
   border: 1px solid black;
   font-size: 0.9rem;
   padding: 15px 25px;
+  background-position: right bottom;
+  transition: all 0.25s ease-in-out;
+}
+.container .content-row .row-half-paragraph button:hover {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  color: white;
+  background-position: left bottom;
 }
 @media only screen and (max-width: 600px) {
   .container .content-row .row-half-paragraph button {
@@ -297,6 +305,7 @@ table {
   padding: 0px 85px;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 @media only screen and (max-width: 600px) {
   .container .content-column {
@@ -428,11 +437,19 @@ table {
 }
 .footer .contact h2 {
   font-size: 1.2rem;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: bold;
 }
 .footer .contact input {
+  margin-top: 10px;
   width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 14px;
+}
+.footer .contact span {
+  font-size: 12px;
 }
 @media only screen and (max-width: 600px) {
   .footer {
@@ -521,8 +538,16 @@ table {
   border: 1px solid black;
   font-size: 19px;
   padding: 15px 15px;
+  background-position: right bottom;
+  transition: all 0.25s ease-in-out;
   width: 180px;
   font-weight: bold;
+}
+.tab-carousel .tab-menu .tab-button:hover {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  color: white;
+  background-position: left bottom;
 }
 @media only screen and (max-width: 600px) {
   .tab-carousel .tab-menu .tab-button {
@@ -532,6 +557,14 @@ table {
     border: 1px solid black;
     font-size: 19px;
     padding: 15px 15px;
+    background-position: right bottom;
+    transition: all 0.25s ease-in-out;
+  }
+  .tab-carousel .tab-menu .tab-button:hover {
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    color: white;
+    background-position: left bottom;
   }
 }
 .tab-carousel .tab-menu .tab-button.selected {
@@ -650,6 +683,7 @@ table {
 .two-column .contact-form .inputfield p {
   font-size: 14px;
   padding-top: 10px;
+  color: gray;
 }
 .two-column .contact-form .inputfield input,
 .two-column .contact-form .inputfield select,
@@ -657,7 +691,7 @@ table {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   font-size: 16px;
 }
 .two-column .contact-form .selector div {
@@ -674,6 +708,14 @@ table {
   border: 1px solid black;
   font-size: 16px;
   padding: 15px 45px;
+  background-position: right bottom;
+  transition: all 0.25s ease-in-out;
+}
+.two-column .contact-form .inputbutton input:hover {
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  color: white;
+  background-position: left bottom;
 }
 .two-column .address-bar {
   width: 40%;
@@ -685,7 +727,44 @@ table {
 .two-column .address-bar .state h2 {
   font-weight: bold;
   font-size: 18px;
+  line-height: 28px;
 }
 .two-column .address-bar .state p {
-  line-height: 24px;
+  line-height: 28px;
+}
+.gallery {
+  background-image: url('http://www.exciting-krakow.com/wp-content/uploads/sites/2/2013/04/ojcow-national-park-top.jpg');
+  width: 1024px;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+.gallery .top-headlines {
+  font-size: 64px;
+  line-height: 75px;
+  color: white;
+  width: 33%;
+  font-weight: bold;
+  position: absolute;
+  left: 85px;
+  bottom: 25px;
+}
+.gallery-wrap {
+  padding: 35px 85px;
+  display: flex;
+  justify-content: center;
+}
+.gallery-wrap .img-top-left {
+  position: absolute;
+  clip-path: polygon(0% 101%, 101% 0%, 0% 0%);
+}
+.gallery-wrap .img-bot-right {
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+.gallery-wrap .image-container {
+  box-shadow: 5px 5px 10px #a1a1a1;
+  height: 360px;
+  width: 599px;
+  position: absolute;
+  z-index: -1;
 }
