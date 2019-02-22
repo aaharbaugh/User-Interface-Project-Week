@@ -19,12 +19,12 @@ right.addEventListener('click', (event) => {
         ease: 'Power2.easeIn'
       })
     TweenMax.to(right, 0.5, {
-        x: 400,
+        x: 300,
         opacity: 0,
         ease: 'Power2.easeIn'
       })
       TweenMax.to(left, 0.5, {
-        x: -400,
+        x: -300,
         opacity: 0,
         ease: 'Power2.easeIn',
         delay: 0.15
