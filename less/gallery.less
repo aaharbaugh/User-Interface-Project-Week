@@ -27,8 +27,6 @@
         position: relative;
         overflow: hidden;
 
-        
-
         .img-behind{
             position: absolute;
         }   
@@ -42,10 +40,16 @@
         .img-bot-right {
             clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
         }
-
+    
     }
 
-
+    .image-container{
+        box-shadow: 5px 5px 10px rgb(161, 161, 161);
+        height: 460px;
+        width: 800px;
+        position: absolute;
+        z-index: -1;
+    }
         
 }
 

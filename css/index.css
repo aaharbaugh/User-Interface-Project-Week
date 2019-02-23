@@ -769,3 +769,10 @@ table {
 .gallery-wrap .image-holder .img-bot-right {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
+.gallery-wrap .image-container {
+  box-shadow: 5px 5px 10px #a1a1a1;
+  height: 460px;
+  width: 800px;
+  position: absolute;
+  z-index: -1;
+}
