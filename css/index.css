@@ -733,7 +733,7 @@ table {
   line-height: 28px;
 }
 .gallery {
-  background-image: url('http://www.exciting-krakow.com/wp-content/uploads/sites/2/2013/04/ojcow-national-park-top.jpg');
+  background-color: black;
   width: 1024px;
   height: 250px;
   position: relative;
@@ -743,14 +743,14 @@ table {
   font-size: 64px;
   line-height: 75px;
   color: white;
-  width: 33%;
+  width: 45%;
   font-weight: bold;
   position: absolute;
   left: 85px;
   bottom: 25px;
 }
 .gallery-wrap {
-  padding: 35px 0;
+  padding: 64px 0 64px 0;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -769,10 +769,21 @@ table {
 .gallery-wrap .image-holder .img-bot-right {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
+.gallery-wrap .image-holder .caption {
+  font-size: 48px;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 45px;
+  background-color: black;
+}
 .gallery-wrap .image-container {
   box-shadow: 5px 5px 10px #a1a1a1;
   height: 460px;
-  width: 800px;
+  width: 855px;
   position: absolute;
   z-index: -1;
 }
