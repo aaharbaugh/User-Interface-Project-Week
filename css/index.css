@@ -750,21 +750,22 @@ table {
   bottom: 25px;
 }
 .gallery-wrap {
-  padding: 35px 85px;
+  padding: 35px 0;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
-.gallery-wrap .img-top-left {
+.gallery-wrap .image-holder {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-wrap .image-holder .img-behind {
+  position: absolute;
+}
+.gallery-wrap .image-holder .img-top-left {
   position: absolute;
   clip-path: polygon(0% 101%, 101% 0%, 0% 0%);
 }
-.gallery-wrap .img-bot-right {
+.gallery-wrap .image-holder .img-bot-right {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-}
-.gallery-wrap .image-container {
-  box-shadow: 5px 5px 10px #a1a1a1;
-  height: 360px;
-  width: 599px;
-  position: absolute;
-  z-index: -1;
 }
