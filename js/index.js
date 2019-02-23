@@ -87,7 +87,7 @@ const headline = document.querySelectorAll('.top-headlines div')
 let delayTime = 0.2;
 
 headline.forEach(line => {
-    document.addEventListener('load', (event) => {
+    window.addEventListener('load', (event) => {
     TweenMax.from(line, 0.5, {
         x: 200,
         delay: delayTime,
