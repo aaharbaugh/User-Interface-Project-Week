@@ -32,11 +32,13 @@ right.addEventListener('click', (event) => {
 
     TweenMax.to(right, 1, {
         x: 900, 
-        opacity: 1
+        opacity: 1,
+        ease: 'Expo.easeIn'
       })
       TweenMax.to(left, 1, {
         x: -900,
-        opacity: 1
+        opacity: 1,
+        ease: 'Expo.easeIn'
       })
 
 
@@ -55,11 +57,13 @@ left.addEventListener('click', (event) => {
 
     TweenMax.to(right, 0.8, {
         x: 900,
-        opacity: 1
+        opacity: 1,
+        ease: 'Expo.easeIn'
       })
       TweenMax.to(left, 0.8, {
         x: -900,
-        opacity: 1
+        opacity: 1,
+        ease: 'Expo.easeIn'
       })
 
       //function to change image, and then do final tween In, after timeouts. 
