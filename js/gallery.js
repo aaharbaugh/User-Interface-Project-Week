@@ -46,12 +46,14 @@ right.addEventListener('click', (event) => {
     background.src = imgArray[counter];
 
     TweenMax.to(right, 1, {
-        x: 900, 
+        x: 900,
+        y: 900,
         opacity: 1,
         ease: 'Expo.easeIn'
       })
       TweenMax.to(left, 1, {
         x: -900,
+        y: -900,
         opacity: 1,
         ease: 'Expo.easeIn'
       })
@@ -106,10 +108,12 @@ const changeImg = function() {
 const tweenInRight = function () {
 
     TweenMax.to(right, 0, {
-        x: 0
+        x: 0,
+        y: 0
       })
       TweenMax.to(left, 0, {
-        x: 0
+        x: 0,
+        y: 0
       })
 }
 
