@@ -1,0 +1,119 @@
+.contact-page{
+    background-image: url('../img/contact/contact-jumbotron.png');
+    width: 1024px;
+    height: 250px;
+    position: relative;
+    z-index: -1;
+
+    @media only screen and (max-width: 600px) {
+        background-image: url('../img/contact/contact-mobile-jumbotron.png');
+        width: 320px;
+        height: 260px;
+        padding: 0px 15px;
+        margin-bottom: 25px;
+    }
+
+    .top-headlines{
+        font-size: 64px;
+        line-height: 75px;
+        color: white;
+        width: 60%;
+        font-weight: bold;
+        position: absolute;
+        left: 85px;
+        bottom: 25px;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 36px;
+            line-height: 36px;
+            left: 15px;
+            bottom: 25px;
+        }
+    }
+}
+
+.contact-headline{
+    font-size: 1.7rem;
+    padding-bottom: 25px;
+    font-weight: bold;
+
+    @media only screen and (max-width: 600px) {
+        padding: 25px 15px;
+    }
+}
+
+.two-column{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .contact-form{
+
+        padding: 0 85px;
+        width: 65%;
+        margin-right: 50px;
+    
+        .inputfield{
+            padding-bottom: 45px;
+
+            h2{
+                padding-bottom: 10px;
+                font-size: 18x;
+            }
+    
+            p{
+                font-size: 14px;
+                padding-top: 10px;
+                color: gray;
+            }
+
+            input, select, textarea{
+                width: 100%;
+                padding: 12px;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+                font-size: 16px;
+            
+            }
+            
+
+        }
+
+        .selector{
+            div{
+                padding-bottom: 7px; 
+
+                input{
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .inputbutton{
+            padding: 20px 0;
+            input{
+                .button-mixin(white, black, 16px, 15px, 45px);
+            }
+        }
+    }
+    
+    .address-bar{
+        width: 40%;
+
+        .state{
+            width: 50%;
+            padding: 15px 0;
+
+            h2{
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            p{
+                line-height: 28px;
+            }
+        }
+    }
+
+}
